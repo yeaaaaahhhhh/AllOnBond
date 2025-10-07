@@ -7,13 +7,7 @@
     search: '',
   };
 
-  const etfs = [
-    // 샘플 데이터 (세전 TTM 분배율)
-    { provider: 'KODEX', name: '종합채권(AA-이상) 액티브 월분배', ticker: '273130', ttmYieldPct: 4.2, frequency: 'monthly' },
-    { provider: 'TIGER', name: '국채선물10년 인버스X1(채권형) 월분배', ticker: '123456', ttmYieldPct: 4.5, frequency: 'monthly' },
-    { provider: 'KBSTAR', name: '국고채3년', ticker: '136340', ttmYieldPct: 3.6, frequency: 'semiannual' },
-    { provider: 'KOSEF', name: '10년국고채', ticker: '148070', ttmYieldPct: 3.9, frequency: 'semiannual' },
-  ];
+  let etfs = [];
 
   function freqToM(freqSelect, fallback) {
     const map = { monthly: 12, quarterly: 4, semiannual: 2, annual: 1 };
@@ -94,8 +88,22 @@
     document.getElementById('search').addEventListener('input', render);
   }
 
-  window.addEventListener('DOMContentLoaded', function () {
+  async function loadData() {
+    try {
+      const res = await fetch('./data/etfs.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('데이터 로드 실패');
+      const json = await res.json();
+      if (!Array.isArray(json)) throw new Error('JSON 형식 오류');
+      etfs = json;
+    } catch (err) {
+      console.error(err);
+      etfs = [];
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', async function () {
     bind();
+    await loadData();
     render();
   });
 })();

@@ -1,0 +1,34 @@
+[
+  {
+    "provider": "KODEX",
+    "name": "종합채권(AA-이상) 액티브 월분배",
+    "ticker": "273130",
+    "ttmYieldPct": 4.20,
+    "frequency": "monthly",
+    "sourceUrl": "https://example.com/kodex-273130"
+  },
+  {
+    "provider": "TIGER",
+    "name": "국채선물10년 인버스X1(채권형) 월분배",
+    "ticker": "123456",
+    "ttmYieldPct": 4.50,
+    "frequency": "monthly",
+    "sourceUrl": "https://example.com/tiger-123456"
+  },
+  {
+    "provider": "KBSTAR",
+    "name": "국고채3년",
+    "ticker": "136340",
+    "ttmYieldPct": 3.60,
+    "frequency": "semiannual",
+    "sourceUrl": "https://example.com/kbstar-136340"
+  },
+  {
+    "provider": "KOSEF",
+    "name": "10년국고채",
+    "ticker": "148070",
+    "ttmYieldPct": 3.90,
+    "frequency": "semiannual",
+    "sourceUrl": "https://example.com/kosef-148070"
+  }
+]
