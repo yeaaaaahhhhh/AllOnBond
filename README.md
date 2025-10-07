@@ -12,7 +12,7 @@ python3 -m http.server 8080
 npx serve .
 ```
 
-브라우저에서 `http://localhost:8080` 접속.
+브라우저에서 `http://localhost:8080` 접속. (docs/ 구조 사용 시 `python3 -m http.server -d docs 8080`)
 
 2) 데이터 구조
 
@@ -64,6 +64,7 @@ git push
 
 옵션 B: `docs/` 폴더 사용
 - 현재 구조를 `docs/`로 옮기고 Pages Source를 `docs/`로 지정
+- 이 저장소는 `docs/` 폴더로 배포됩니다.
 
 커스텀 도메인 사용 시 DNS CNAME 설정 후 Pages에 입력.
 

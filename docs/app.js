@@ -90,7 +90,7 @@
 
   async function loadData() {
     try {
-      const res = await fetch(`./data/etfs.json?v=${Date.now()}` , { cache: 'no-store' });
+      const res = await fetch('./data/etfs.json', { cache: 'no-store' });
       if (!res.ok) throw new Error('데이터 로드 실패');
       const json = await res.json();
       if (!Array.isArray(json)) throw new Error('JSON 형식 오류');
