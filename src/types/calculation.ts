@@ -1,4 +1,4 @@
-import { Bond, CashFlow, TaxCalculation } from './bond';
+import type { Bond, CashFlow, TaxCalculation } from './bond';
 
 export interface BondCalculatorInput {
   bond: Bond;

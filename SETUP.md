@@ -74,7 +74,7 @@ git push origin main
 ### 배포 확인
 
 GitHub Actions 탭에서 배포 진행 상황을 확인할 수 있습니다.
-배포 후 `https://yourusername.github.io/AllOnBond/`에서 확인하세요.
+배포 후 `https://yeaaaaahhhhh.github.io/AllOnBond/`에서 확인하세요.
 
 ## 트러블슈팅
 

@@ -16,7 +16,7 @@ export default function Header() {
           </div>
           <nav className="flex items-center gap-4">
             <a
-              href="https://github.com/yourusername/AllOnBond"
+              href="https://github.com/yeaaaaahhhhh/AllOnBond"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary-600 text-sm text-gray-600 transition-colors"
