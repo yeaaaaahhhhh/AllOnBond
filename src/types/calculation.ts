@@ -20,6 +20,7 @@ export interface BondCalculatorResult {
   bankEquivalentYield: number;
   duration: number;
   modifiedDuration: number;
+  convexity: number;
   cashFlows: CashFlow[];
   taxCalculation?: TaxCalculation;
 }

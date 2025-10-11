@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import LastUpdated from '@/components/UI/LastUpdated';
-import CurrencyToggle from '@/components/UI/CurrencyToggle';
+import LastUpdated from '@/components/Common/LastUpdated';
+import CurrencyToggle from '@/components/Common/CurrencyToggle';
 
 export default function Comparison() {
   const [currency, setCurrency] = useState<'KRW' | 'USD'>('KRW');
